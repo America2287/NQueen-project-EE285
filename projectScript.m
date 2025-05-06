@@ -20,7 +20,7 @@ chessBoard = ones(queenNum);
 %this conversion function will be called in loop after the path clearing and
 % before or after next position is determined
 
-chessBoard = MN_next();
+chessBoard = MN_next(startCoor, );
 
 
 %output
