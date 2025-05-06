@@ -20,7 +20,7 @@ chessBoard = ones(queenNum);
 %this conversion function will be called in loop after the path clearing and
 % before or after next position is determined
 
-chessBoard = boardCheck(chessBoard);
+chessBoard = MN_next();
 
 
 %output
@@ -37,5 +37,5 @@ writematrix(chessBoard,fid,'Delimiter','tab');
 %read in the postion array
 fprintf ('\n');
 fprintf('queens placed at: ');
-writematrix(queenPositions)
+writematrix(queenPositions);
 
